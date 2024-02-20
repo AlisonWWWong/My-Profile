@@ -56,3 +56,68 @@
   margin-top: 2em; /* 为上边距添加空间 */
   margin-bottom: 2em; /* 为下边距添加空间 */
 }
+
+
+
+body { 
+  font-family: Arial, sans-serif; 
+  line-height: 1.6; 
+  margin: 0; 
+  padding: 0; 
+}
+.container { 
+  width: 960px; /* 固定宽度 */
+  margin: auto; 
+  overflow: hidden; 
+}
+
+header, section{ 
+  padding: 20px; 
+}
+header { 
+  background: #333; 
+  color: #fff; 
+}
+header h1 { 
+  margin: 0; 
+}
+section { 
+  margin: 15px 0; 
+}
+.item { 
+  margin-bottom: 10px; 
+}
+
+/* 响应式设计：针对小屏设备优化 */
+@media screen and (max-width: 980px) {
+  .container {
+    width: 95%; /* 小屏设备上使用更小的边距 */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header, section, footer {
+    padding: 10px; /* 在非常小的屏幕上进一步减少填充 */
+  }
+}
+
+/* 在现有样式下添加 */
+.footer-container {
+  margin: auto; /* 保持居中 */
+  width: 80%
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  /* 如果你想要padding也在.footer-container内部，可以从这里移除 */
+  padding: 5px 10px; 
+}
+
+
+.footer-container p {
+  margin: 0; /* 移除段落的默认外边距 */
+  /* 如果您想要一点空间，可以设置为 'margin: 5px 0;' */
+}
+
+
